@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".login"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageView2"-->
+            <!--                android:layout_width="66dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_margin="3dp"-->
+
+            <!--                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />-->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginRight="20dp"
+                android:background="#8DFFFFFF"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:touchscreenBlocksFocus="true">
+
+                <TextView
+                    android:id="@+id/logintext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:text="Login"
+                    android:textColor="@color/black"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:drawableLeft="@drawable/baseline_person_24"
+
+                    android:drawablePadding="8dp"
+                    android:hint="user name"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp">
+
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="35dp"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="@color/black"
+                        android:text="login"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="#FF0000" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

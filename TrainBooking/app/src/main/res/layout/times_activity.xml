@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="1"
+    tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_gravity="fill"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="selector"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:background="#8DFF0000"
+                android:id="@+id/autoCompletetxt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_gravity="fill"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="100dp"
+            android:hint="selector"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:background="#8DFF0000"
+                android:id="@+id/autoCompletetxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <TableLayout
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:stretchColumns="1,2,3,4,5"
+
+
+        >
+        <TableRow>
+            <TextView
+                android:background="@drawable/table_header"
+                android:text="id"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="1"
+                android:gravity="center"
+
+                />
+            <TextView
+                android:background="@drawable/table_header"
+                android:text="type"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="2"
+                android:gravity="center"
+                />
+            <TextView
+                android:background="@drawable/table_header"
+                android:text="from"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="3"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_column="4"
+                android:background="@drawable/table_header"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="to"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </TableLayout>
+
+</GridLayout>
